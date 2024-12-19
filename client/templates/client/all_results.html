@@ -1,0 +1,16 @@
+{% extends 'client/base.html' %}
+
+{% block title %}Все опросники{% endblock %}
+
+{% block content %}
+    <h1>Результаты опросников</h1>
+    {% for poll in polls %}
+        <h2>{{ poll.question }}</h2>
+        <ul>
+        {% for choice in poll.choice_set.all %}
+            <li>{{ choice.choice_text }} -- {{ choice.votes }} голосов{{ choice.votes|pluralize }}</li>
+        {% endfor %}
+        </ul>
+        <div style="width: 100%; background: #fff; height: 1px; margin: 20px 0px 40px;"></div>
+    {% endfor %}
+{% endblock %}
