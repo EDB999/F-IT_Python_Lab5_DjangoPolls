@@ -1,12 +1,12 @@
 html, body {
     height: 100%;
-    color: white;
+    color: #333; /* Темно-серый текст */
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #333333;
-    margin: 0px 50px;
+    background-color:  /* Светло-серый фон */
+    margin: 0px;
     padding: 0;
     display: flex;
     flex-flow: column nowrap;
@@ -17,26 +17,37 @@ body {
 }
 
 header {
-    border-bottom: 1px solid white; 
+    border-bottom: 1px solid #ccc; /* Светло-серый бордер */
     display: flex;
+    width: 98%;
     align-items: center;
     flex-flow: row nowrap;
     justify-content: space-between;
+    background-color: #f4f4f4;
+    padding: 10px 20px;
     a {
-       font-size: 20px; 
+       font-size: 20px;
        margin: 0;
+       color: #007bff;
     }
     margin-bottom: 30px;
 }
+
 #error {
-    color: #fc6565;
+    color: #FFA500;
 }
+
 footer {
-    border-top: 1px solid white;
+    border-top: 1px solid #ccc; /* Светло-серый бордер */
+    background-color: #007bff; /* Синий фон */
+    color: white; /* Белый текст */
+    text-align: center;
+    padding: 10px 0;
 }
 
 h1 {
-    color: #ffffff;
+    color: #007bff; /* Синий текст */
+    text-align: center;
 }
 
 ul {
@@ -45,34 +56,37 @@ ul {
 }
 
 li {
-    background: #242424;
+    background: #e0e0e0; /* Светло-серый фон */
     margin: 10px 0;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc; /* Светло-серый бордер */
     border-radius: 10px;
+    width: 35%;
 }
 
 a {
     text-decoration: none;
-    color: #007bff;
+    color: #007bff; /* Синий текст */
 }
 
 a:hover {
     text-decoration: underline;
+    color: #0056b3; /* Темно-синий текст при наведении */
 }
 
 form {
-    background: #242424;
+    background: #f4f4f4;
     padding: 20px;
-    border: 1px solid white;
+    border: 1px solid #ccc; /* Светло-серый бордер */
     border-radius: 10px;
     margin-top: 20px;
 }
 
 form > label {
-    color: white;
+    color: #333; /* Темно-серый текст */
     font-size: 18px;
 }
+
 input[type="radio"] {
     margin-right: 10px;
     margin-bottom: 10px;
@@ -80,8 +94,8 @@ input[type="radio"] {
 
 input[type="submit"] {
     margin: 20px 0px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #007bff; /* Синий фон */
+    color: #fff; /* Белый текст */
     border: none;
     padding: 10px 20px;
     cursor: pointer;
