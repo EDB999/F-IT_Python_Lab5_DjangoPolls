@@ -1,2 +1,3 @@
-# django-polls
-Приложение Django для управления опросниками
+# DjangoPoller
+Приложение Django для опросами
+
